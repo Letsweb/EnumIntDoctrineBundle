@@ -1,0 +1,35 @@
+{
+    "name": "letsweb/enum-int-doctrine-bundle",
+    "description": "Provides support of ENUM type for Doctrine2 in ORO PLatform applications.",
+    "keywords": ["bundle", "symfony", "doctrine", "entity", "enum", "type", "DBAL", "MySQL", "SQLite", "PostgreSQL"],
+    "homepage": "https://github.com/Letsweb/EnumIntDoctrineBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "geoffroycochard",
+            "email": "geoffroycochard@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "geoffroycochard@gmail.com",
+        "issues": "https://github.com/Letsweb/EnumIntDoctrineBundle/issues"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/symfony": "~2.3",
+        "oro/platform": "~1.8",
+        "doctrine/orm": "~2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "squizlabs/php_codesniffer": "*",
+        "escapestudios/symfony2-coding-standard": "*"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Letsweb\\Bundle\\EnumIntDoctrineBundle\\": ""
+        }
+    }
+}
