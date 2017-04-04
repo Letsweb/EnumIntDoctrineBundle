@@ -15,17 +15,6 @@
         "email": "geoffroycochard@gmail.com",
         "issues": "https://github.com/Letsweb/EnumIntDoctrineBundle/issues"
     },
-    "require": {
-        "php": ">=5.4.0",
-        "symfony/symfony": "~2.3",
-        "oro/platform": "~1.8",
-        "doctrine/orm": "~2.2"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.8",
-        "squizlabs/php_codesniffer": "*",
-        "escapestudios/symfony2-coding-standard": "*"
-    },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
