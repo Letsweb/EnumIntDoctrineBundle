@@ -78,11 +78,4 @@ class EnumIntConstantExtension extends AbstractEnumIntExtension
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'ENUM Constant';
-    }
 }
