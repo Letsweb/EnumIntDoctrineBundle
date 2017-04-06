@@ -88,11 +88,4 @@ class ReadableEnumIntValueExtension extends AbstractEnumIntExtension
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getName()
-    {
-        return 'Readable ENUM Value';
-    }
 }
