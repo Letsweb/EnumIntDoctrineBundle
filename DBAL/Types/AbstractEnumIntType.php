@@ -31,6 +31,14 @@ abstract class AbstractEnumIntType extends Type
     /**
      * {@inheritdoc}
      */
+    public function convertToPHPValue($value, AbstractPlatform $platform)
+    {
+        return (int) $value;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
         if (null === $value) {
@@ -50,26 +58,6 @@ abstract class AbstractEnumIntType extends Type
     public function getSqlDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
     {
         return 'TINYINT(1)';
-
-//        $values = implode(
-//            ', ',
-//            array_map(
-//                function ($value) {
-//                    return "'{$value}'";
-//                },
-//                $this->getValues()
-//            )
-//        );
-//
-//        if ($platform instanceof SqlitePlatform) {
-//            return sprintf('TEXT CHECK(%s IN (%s))', $fieldDeclaration['name'], $values);
-//        }
-//
-//        if ($platform instanceof PostgreSqlPlatform) {
-//            return sprintf('VARCHAR(255) CHECK(%s IN (%s))', $fieldDeclaration['name'], $values);
-//        }
-//
-//        return sprintf('TINYINT(1)', $values);
     }
 
     /**
